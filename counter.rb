@@ -4,8 +4,8 @@ def counter(arr)
     result[element] += 1
   end
   result_array = []
-  result.each do |_key, value|
-    value.even? ? result_array.push(_key) : nil
+  result.each do |key, value|
+    value.even? ? result_array.push(key) : nil
   end
   p result_array
 end
